@@ -217,7 +217,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
     padding: 3em 5em;
 }
@@ -233,7 +233,17 @@ header {
     font-size: 1em;
     font-family: 'Lexend', sans-serif;
     text-align: left;
-    align-items: left;
+    list-style-type: square;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+.education-overview ul ul{
+    list-style-type: circle;
+    margin-top: 5px
+}
+.education-overview li:hover{
+    font-weight: bold
 }
 .resume-link {
     display: block;
