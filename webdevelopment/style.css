@@ -198,7 +198,7 @@ header {
     text-align: left;
     padding: 3em 5em;
 }
-.about-overview h3 {
+.about-overview h1 {
     color: #283F5D;
     font-size: 2em; 
     font-family: 'Outfit', sans-serif;
@@ -221,7 +221,7 @@ header {
     text-align: left;
     padding: 3em 5em;
 }
-.education-overview h3 {
+.education-overview h1 {
     color: #283F5D;
     font-size: 2em; 
     font-family: 'Outfit', sans-serif;
