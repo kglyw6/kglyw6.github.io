@@ -1,0 +1,262 @@
+/* #region INDEX*/
+html{
+    scroll-behavior: smooth;
+}
+.hero-main {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    padding: 3em 5em;
+    gap: 4em;
+}
+.hero-intro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #283F5D;
+    padding: 1em 2em;
+}
+.header-logo p {
+    margin: 0;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.08em;
+}
+.header-logo p:first-child {
+    font-size: 1.85em;
+    font-weight: bold;
+}
+.header-logo p:last-child {
+    font-size: 0.875em;
+}
+.header-navigation ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header-navigation a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5em;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-image {
+    width: 80%;
+    display: flex;
+    justify-content:right;
+    align-items: right;
+}
+.hero-image img {
+    width: 90%;
+    height: auto;
+}
+.hero-intro h1 {
+    color: #283F5D;
+    font-size: 1.8em;
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+}
+.hero-intro h2 {
+    color:#283F5D;
+    font-size: 3.5em;
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+} 
+.hero-intro p {
+    color: #283F5D;
+    font-size: 1.6em;
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+}
+.purposebutton {
+    display: flex; 
+    color: #283F5D;
+    font-size: 5em;
+    text-decoration: none;
+}
+.hero-purpose {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3em  5em;
+    box-sizing: border-box;
+}
+.hero-purpose h3 {
+    color: #283F5D;
+    font-size: 2em; 
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.hero-purpose p {
+    color: #283F5D;
+    font-size: 1.5em;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+}
+#herobutton {
+    display: inline-block;
+    background-color: #FFD1F7;
+    color: #283F5D;
+    font-size: 1.5em;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hero-quote blockquote {
+    background-color: #BBDBB8;
+    color: #283F5D;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.quote-text {
+    font-size: 1.4em;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+}
+.hero-quote p {
+    color: #283F5D;
+    font-size: 0.875em;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+}
+/* #endregion */
+/* #region ABOUT*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #283F5D;
+    padding: 1em 2em;
+}
+.header-logo p {
+    margin: 0;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.08em;
+}
+.header-logo p:first-child {
+    font-size: 1.85em;
+    font-weight: bold;
+}
+.header-logo p:last-child {
+    font-size: 0.875em;
+}
+.header-navigation ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header-navigation a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5em;
+}
+.about-top{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    padding: 3em 5em;
+}
+.headshot img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px solid #FFD1F7
+}
+.about-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 3em 5em;
+}
+.about-overview h1 {
+    color: #283F5D;
+    font-size: 2em; 
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+.about-overview p {
+    color: #283F5D;
+    font-size: 1.25em;
+    font-family: 'Lexend', sans-serif;
+    text-align: left;
+    align-items: left;
+}
+.education-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 3em 5em;
+}
+.education-overview h1 {
+    color: #283F5D;
+    font-size: 2em; 
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+.education-overview ul{
+    color: #283F5D;
+    font-size: 1em;
+    font-family: 'Lexend', sans-serif;
+    text-align: left;
+    list-style-type: square;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+.education-overview ul ul{
+    list-style-type: circle;
+    margin-top: 5px
+}
+.resume-link {
+    display: block;
+    width: fit-content;
+    background-color: #FFD1F7;
+    color: #283F5D;
+    font-size: 1.5em;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #283F5D;
+    text-decoration: none;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
