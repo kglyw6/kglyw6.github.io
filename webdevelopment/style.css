@@ -197,3 +197,72 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/* #region REFLECTION*/
+body{
+    background-color:#e2f5e0
+}
+.reflection-heading h1{
+    font-family: 'Outfit', serif;
+    color:#283F5D;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.reflection-box {
+    display: flex;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color:#283F5D;
+    border-radius: 15px;
+}
+.reflection-text p {
+    color: white;
+    font-family: 'Outfit', serif;
+}
+.reflection-text h2{
+    color:#FFD1F7;
+    text-transform: uppercase;
+    font-family: 'Outfit', sans-serif;
+}
+.reflection-number{
+    background-color:#FFD1F7;
+    color: #283F5D;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    align-self: center;
+}
+.reflection-number p{
+    margin: 0;
+}
+.reflection-text{
+    border-left: 3px solid #FFD1F7;
+    padding-left: 20px;
+}
+.reflection-icon{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-right: 20px;
+    align-self: center;
+    flex-shrink: 0;
+}
+/* Pseudo Element-Styles First Letter of First Reflection*/
+.first-reflection::first-letter{
+    color:#FFD1F7;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* Pseudo Element-Idenents First Line of Following Paragraphs*/
+.rest-reflection{
+    text-indent: 20px;
+}

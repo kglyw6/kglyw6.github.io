@@ -17,7 +17,7 @@ header {
     height: auto;
     display: block;
 }
-.header-navigation ul{
+.header-navigation nav > ul{
     display: flex;
     gap: 2em;
     list-style: none;
@@ -36,4 +36,36 @@ header {
 .header-navigation a:hover,
 .header-navigation a:focus {
     background-color: #19293f;
+}
+/* Drop-Down Navigation Styling */
+.dropdown{
+    position: relative;
+}
+.header-navigation .dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:#19293f;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 220px;
+    z-index: 1000;
+}
+.header-navigation .dropdown-menu li{
+    width: 100%;
+}
+.header-navigation .dropdown-menu a{
+    display: block;
+    padding: 12px 15px;
+    white-space: nowrap;
+    text-align: left;
+}
+/* Changes color of individual dropdown link when hovered*/
+.header-navigation .dropdown-menu a:hover, .header-navigation .dropdown-menu a:focus{
+    background-color:#111821;
+}
+.header-navigation .dropdown:hover > .dropdown-menu, .header-navigation .dropdown:focus-within > .dropdown-menu{
+    display: block;
 }
