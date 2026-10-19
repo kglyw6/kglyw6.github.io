@@ -122,7 +122,8 @@ body {
     height: 350px;
     object-fit: cover;
     border-radius: 10px;
-    border: 10px solid #FFD1F7
+    border: 10px solid #FFD1F7;
+    background-color:#FFD1F7;
 }
 .about-overview {
     display: flex;
@@ -197,9 +198,21 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.resume-video{
+    padding: 3em 5em;
+    text-align: center;
+}
+.resume-video video{
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #FFD1F7;
+    border-radius: 5px;
+    background-color: #283F5D;
+}
 /* #region REFLECTION*/
 body{
-    background-color:#e2f5e0
+    background-color:#e2f5e0;
 }
 .reflection-heading h1{
     font-family: 'Outfit', serif;
