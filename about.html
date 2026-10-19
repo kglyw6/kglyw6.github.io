@@ -22,6 +22,7 @@
     </title>
     <!--Link to external CSS for styling-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
   </head>
   
   <body>
@@ -30,8 +31,7 @@
     <header>
       <!--Header Logo-->
       <div class="header-logo">
-        <p>KATHERINE LINK</p>
-        <p>Speech, Language, and Hearing Sciences</p>
+        <img src="logo.png" alt="Site Logo">
       </div>
       <!--Navigation Bar-->
       <div class="header-navigation">
@@ -39,6 +39,16 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="experience.html">Experiences</a>
+              <ul class="dropdown-menu">
+                <li><a href="experience.html#clinical">Clinical Apprenticeship</a></li>
+                <li><a href="experience.html#disability-center">Disability Center</a></li>
+                <li><a href="experience.html#club-volleyball">Club Volleyball</a></li>
+              </ul>
+            </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         </nav>
       </div>
@@ -48,7 +58,7 @@
       <!--Content will go here-->
       <div class="about-top">
         <div class="headshot">
-            <img src="headshot.jpeg" alt="Professional Headshot">
+            <img src="media/headshot.jpeg" alt="Professional Headshot of Katherine Link">
         </div>
         <div class="about-overview">
           <h1>About Me</h1>
@@ -87,6 +97,13 @@
       <div class="resume">
         <a class="resume-link" href="webresume.pdf">Download My Resume</a>
       </div>  
+      
+      <div class="resume-video">
+        <video controls aria-label="Video Resume of Katherine Link">
+          <source src="media/resume-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </main>
 
     <footer>

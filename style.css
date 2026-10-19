@@ -17,39 +17,6 @@ html{
     align-items: flex-start;
     text-align: left;
 }  
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #283F5D;
-    padding: 1em 2em;
-}
-.header-logo p {
-    margin: 0;
-    color: white;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 0.08em;
-}
-.header-logo p:first-child {
-    font-size: 1.85em;
-    font-weight: bold;
-}
-.header-logo p:last-child {
-    font-size: 0.875em;
-}
-.header-navigation ul{
-    display: flex;
-    gap: 2em;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.header-navigation a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.5em;
-}
 body {
     margin: 0;
     padding: 0;
@@ -59,7 +26,7 @@ body {
     width: 80%;
     display: flex;
     justify-content:right;
-    align-items: right;
+    align-items: flex-end;
 }
 .hero-image img {
     width: 90%;
@@ -144,39 +111,6 @@ body {
 }
 /* #endregion */
 /* #region ABOUT*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #283F5D;
-    padding: 1em 2em;
-}
-.header-logo p {
-    margin: 0;
-    color: white;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 0.08em;
-}
-.header-logo p:first-child {
-    font-size: 1.85em;
-    font-weight: bold;
-}
-.header-logo p:last-child {
-    font-size: 0.875em;
-}
-.header-navigation ul{
-    display: flex;
-    gap: 2em;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.header-navigation a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.5em;
-}
 .about-top{
     display: flex;
     align-items: center;
@@ -188,7 +122,8 @@ header {
     height: 350px;
     object-fit: cover;
     border-radius: 10px;
-    border: 10px solid #FFD1F7
+    border: 10px solid #FFD1F7;
+    background-color:#FFD1F7;
 }
 .about-overview {
     display: flex;
@@ -211,7 +146,7 @@ header {
     font-size: 1.25em;
     font-family: 'Lexend', sans-serif;
     text-align: left;
-    align-items: left;
+    align-items: flex-start;
 }
 .education-overview {
     display: flex;
@@ -242,6 +177,9 @@ header {
     list-style-type: circle;
     margin-top: 5px
 }
+.education-overview li:hover{
+    font-weight: bold
+}
 .resume-link {
     display: block;
     width: fit-content;
@@ -259,4 +197,85 @@ header {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+.resume-video{
+    padding: 3em 5em;
+    text-align: center;
+}
+.resume-video video{
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #FFD1F7;
+    border-radius: 5px;
+    background-color: #283F5D;
+}
+/* #region REFLECTION*/
+body{
+    background-color:#e2f5e0;
+}
+.reflection-heading h1{
+    font-family: 'Outfit', serif;
+    color:#283F5D;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.reflection-box {
+    display: flex;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color:#283F5D;
+    border-radius: 15px;
+}
+.reflection-text p {
+    color: white;
+    font-family: 'Outfit', serif;
+}
+.reflection-text h2{
+    color:#FFD1F7;
+    text-transform: uppercase;
+    font-family: 'Outfit', sans-serif;
+}
+.reflection-number{
+    background-color:#FFD1F7;
+    color: #283F5D;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    align-self: center;
+}
+.reflection-number p{
+    margin: 0;
+}
+.reflection-text{
+    border-left: 3px solid #FFD1F7;
+    padding-left: 20px;
+}
+.reflection-icon{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-right: 20px;
+    align-self: center;
+    flex-shrink: 0;
+}
+/* Pseudo Element-Styles First Letter of First Reflection*/
+.first-reflection::first-letter{
+    color:#FFD1F7;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* Pseudo Element-Idenents First Line of Following Paragraphs*/
+.rest-reflection{
+    text-indent: 20px;
 }
