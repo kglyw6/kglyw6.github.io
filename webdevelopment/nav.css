@@ -3,17 +3,17 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #283F5D;
-    padding: 0.5em 2em;
+    padding: 0.4em 1.5em;
 }
 .header-logo {
-    width: 450px;
-    height: 70px;
+    width: 350px;
+    height: 60px;
     overflow: hidden;
     display: flex;
     align-items: center
 }
 .header-logo img {
-    width: 450px;
+    width: 350px;
     height: auto;
     display: block;
 }
@@ -28,8 +28,8 @@ header {
     color: white;
     text-decoration: none;
     font-family: 'Outfit', sans-serif;
-    font-size: 1.5em;
-    padding: 15px;
+    font-size: 1.35em;
+    padding: 12px;
     display: block;
     text-align: center;
 }

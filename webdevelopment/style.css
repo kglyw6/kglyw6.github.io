@@ -110,6 +110,7 @@ body {
     text-align: center;
 }
 /* #endregion */
+
 /* #region ABOUT*/
 .about-top{
     display: flex;
@@ -210,6 +211,60 @@ body {
     border-radius: 5px;
     background-color: #283F5D;
 }
+@media print{
+    header,.headshot,.resume,.resume-video{
+        display: none !important;
+    }
+    body {
+        color: black;
+        font-family: serif;
+        font-size: 11pt;
+        line-height: 1.3;
+        display: block;
+        min-height: auto;
+    }
+    h1, p, li{
+        color: black !important;
+        font-family: serif !important;
+    }
+    .about-top{
+        display: block;
+    }
+    main,.about-top, .about-overview, .education-overview{
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+    .about-overview p{
+        width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        overflow: visible;
+    }
+    .education-overview{
+        margin-bottom: 0;
+    }
+    footer{
+        background-image: none;
+        color: black;
+        display: block;
+        margin-top: 0;
+    }
+    footer p{
+        margin: 0;
+    }
+    footer img{
+        display: none;
+    }
+}
+@page{
+    margin: 1in; 
+}
+
 /* #region REFLECTION*/
 body{
     background-color:#e2f5e0;
@@ -279,3 +334,37 @@ body{
 .rest-reflection{
     text-indent: 20px;
 }
+/* #region FOOTER*/
+footer{
+    background-image: url("media/footer-background.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px 20px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.1em;
+    flex-shrink: 0;
+}
+footer p{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+footer img{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
