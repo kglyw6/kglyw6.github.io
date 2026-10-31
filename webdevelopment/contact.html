@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <!--
+  Name: Katherine Link
+  Date: October 30th, 2026
+  Course: IS_LT 4355
+  Description: 5: Project: Contact Page
+  -->
+  <!--Contains metadata and browser instructions, not visible on page-->
+  
+  <head>
+    <!--Sets character encoding-->
+    <meta charset="utf-8">
+    <!--Helps website be responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Displays the name of your page in the browser tab-->
+    <title>
+      Contact Page 
+    </title>
+    <!--Link to external CSS for styling-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  
+  <body>
+    <!--Visual section for banners, logos, or navigation-->
+    <header>
+      <!--Header Logo-->
+      <div class="header-logo">
+        <img src="logo.png" alt="Site Logo">
+      </div>
+      <!--Navigation Bar-->
+      <div class="header-navigation">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experiences</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <!--Content will go here-->
+    <div class="contact-title">
+      <h1>CONTACT ME</h1>
+    </div>
+
+    <section class="contact-section">
+
+      <div class="contact-info">
+        <h2>Let's Connect!</h2>
+        <p>I am open to making new connections, learning about opportunities, and discussing all things speech-language pathology! </p>
+          <ul>
+            <li>314-402-4001</li>
+            <li>kglyw6@umsystem.edu</li>
+          </ul>
+        
+        <h3>Feel Free to Reach Out About</h3>
+          <ul>
+            <li>My undergraduate experiences</li>
+            <li>Feedback or suggestions about the website</li>
+            <Li>Speech, language, and hearing opportunities</Li>
+            <li>Any questions you may have!</li>
+          </ul>
+
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Me A Message</h2>
+
+        <!--Contact Form-->
+        <form action="mailto:kglyw6@umsystem.edu?Subject=Contact%20Form" method="post" enctype="text/plain">
+
+          <!--Title Information-->
+          <label for="title">Title:</label>
+          <select id="title" name="title" required>
+            <option value="" disabled selected>Select your title</option>
+            <option value="ms">Ms.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="mr">Mr.</option>
+            <option value="dr">Dr.</option>
+          </select>
+
+          <!--Name Information-->
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+          
+          <!--Email Information-->
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          
+          <!--Reason For Contact-->
+          <label for="reason">Reason for Contact:</label>
+          <select id="reason" name="reason" required>
+            <option value="" disabled selected>Select a reason</option>
+            <option value="question">Question</option>
+            <option value="feedback">Feedback</option>
+            <option value="opportunity">Opportunity</option>
+            <option value="other">Other</option>
+          </select>
+
+          <!--Message-->
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+          <!--Submit Button-->
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+
+    </section>
+    
+    <footer>
+      <!--Contact Information-->
+      <p><img src="media/email.png" alt="Email Icon"> kglyw6@umsystem.edu</p>
+      <p><img src="media/phone.png" alt="Phone Icon"> 314-402-4001</p>
+    </footer>
+
+  </body>
+  
+</html>
