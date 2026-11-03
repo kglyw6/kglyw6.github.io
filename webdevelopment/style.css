@@ -1,3 +1,8 @@
+/* Name: Katherine Link
+  Date: Novemeber 3rd, 2026
+  Course: IS_LT 4355
+  Description: 6: Activity 6: Adding Layound to your about.html
+ */
 /* #region INDEX*/
 html{
     scroll-behavior: smooth;
@@ -113,9 +118,13 @@ body {
 
 /* #region ABOUT*/
 .about-top{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1 fr 2fr;
+    grid-template-areas:
+        "photo title"
+        "photo text";
+    gap: 1em 3em;
     align-items: center;
-    gap: 3em;
     padding: 3em 5em;
 }
 .headshot img {
@@ -126,15 +135,8 @@ body {
     border: 10px solid #FFD1F7;
     background-color:#FFD1F7;
 }
-.about-overview {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    padding: 3em 5em;
-}
-.about-overview h1 {
+.about-top h1 {
+    grid-area: title;
     color: #283F5D;
     font-size: 2em; 
     font-family: 'Outfit', sans-serif;
@@ -142,17 +144,20 @@ body {
     text-align: left;
     width: 100%;
 }
-.about-overview p {
+.about-top .headshot {
+    grid-area: photo;
+}
+.about-top p {
+    grid-area: text;
     color: #283F5D;
     font-size: 1.25em;
     font-family: 'Lexend', sans-serif;
     text-align: left;
-    align-items: flex-start;
 }
 .education-overview {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
     padding: 3em 5em;
@@ -211,6 +216,46 @@ body {
     border-radius: 5px;
     background-color: #283F5D;
 }
+@media screen and (max-width: 1024px){
+    .hero-main{
+        flex-direction: column;
+        padding: 2em;
+    }
+    .hero-intro{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .hero-image{
+        width: 100%;
+        justify-content: center;
+    }
+    .about-top{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "photo"
+            "text";     
+        padding: 2em;
+    }
+    .about-top h1{
+        grid-area: title;
+        text-align: center;
+        order: 1;
+    }
+    .about-top .headshot{
+        grid-area: photo;
+        justify-self: center;
+        order: 2;
+    }
+    .about-top p{
+        grid-area: text;
+        order: 3;
+    }
+    .education-overview{
+        padding: 2em;
+    }
+}
 @media print{
     header,.headshot,.resume,.resume-video{
         display: none !important;
@@ -230,7 +275,7 @@ body {
     .about-top{
         display: block;
     }
-    main,.about-top, .about-overview, .education-overview{
+    main,.about-top, .education-overview{
         display: block;
         width: 100%;
         max-width: none;
@@ -239,7 +284,7 @@ body {
         box-sizing: border-box;
         overflow: visible;
     }
-    .about-overview p{
+    .about-top p{
         width: 100%;
         max-width: 100%;
         white-space: normal;

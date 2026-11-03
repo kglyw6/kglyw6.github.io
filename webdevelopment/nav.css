@@ -1,3 +1,8 @@
+ /* Name: Katherine Link
+  Date: Novemeber 3rd, 2026
+  Course: IS_LT 4355
+  Description: 6: Activity 6: Adding Layound to your about.html
+ */
 header {
     display: flex;
     justify-content: space-between;
@@ -62,6 +67,15 @@ header {
     white-space: nowrap;
     text-align: left;
 }
+.menu-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+.menu-icon{
+    display: none;
+}
 /* Changes color of individual dropdown link when hovered*/
 .header-navigation .dropdown-menu a:hover, .header-navigation .dropdown-menu a:focus{
     background-color:#111821;
@@ -69,3 +83,49 @@ header {
 .header-navigation .dropdown:hover > .dropdown-menu, .header-navigation .dropdown:focus-within > .dropdown-menu{
     display: block;
 }
+/* Hamburger menu styling for smaller screens */
+@media screen and (max-width: 1024px){
+    .menu-icon {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    .header-navigation nav{
+        display: none;
+    }
+    .menu-checkbox:checked ~ nav{
+        display: block;
+    }
+    .header-navigation nav> ul{
+        flex-direction: column;
+        gap: 0;
+    }
+    .header-navigation .dropdown-menu, .header-navigation .dropdown:hover > .dropdown-menu{
+        display: none;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+    .header-logo{
+        flex: 1;
+        min-width: 0;
+    }
+    .header-logo img{
+        max-width: 100%;
+        height: auto;
+    }
+    .header-navigation nav{
+        width: 100%;
+    }
+    header:has(.menu-checkbox:checked) .header-logo{
+        display: none;
+    }
+    .header-navigation:has(.menu-checkbox:checked) {
+        width: 100%;
+    }
+
+}
+
