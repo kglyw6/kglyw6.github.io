@@ -248,11 +248,25 @@ body {
         justify-self: center;
         order: 2;
     }
+    .headshot img{
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
     .about-top p{
         grid-area: text;
         order: 3;
     }
     .education-overview{
+        padding: 2em;
+    }
+    .resume-video video{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .resume-video{
         padding: 2em;
     }
 }
