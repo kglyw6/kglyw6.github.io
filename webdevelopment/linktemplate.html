@@ -3,9 +3,9 @@
   
   <!--
   Name: Katherine Link
-  Date: October 28th, 2026
+  Date: November 12th, 2026
   Course: IS_LT 4355
-  Description: 5: Activity: 
+  Description: 6: Activity: Responsive Navigation
   -->
   <!--Contains metadata and browser instructions, not visible on page-->
   
@@ -33,11 +33,20 @@
       </div>
       <!--Navigation Bar-->
       <div class="header-navigation">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="experience.html">Experiences</a></li>
+            <li class="dropdown">
+              <a href="experience.html">Experiences</a>
+              <ul class="dropdown-menu">
+                <li><a href="experience.html#clinical">Clinical Apprenticeship</a></li>
+                <li><a href="experience.html#disability-center">Disability Center</a></li>
+                <li><a href="experience.html#club-volleyball">Club Volleyball</a></li>
+              </ul>
+            </li>
             <li><a href="reflection.html">Reflection</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
