@@ -1,7 +1,7 @@
 /* Name: Katherine Link
-  Date: Novemeber 3rd, 2026
+  Date: Novemeber 15th, 2026
   Course: IS_LT 4355
-  Description: 6: Activity 6: Adding Layound to your about.html
+  Description: 6: Project: Project/Career/Business Content Page
  */
 /* #region INDEX*/
 html{
@@ -323,6 +323,7 @@ body {
 @page{
     margin: 1in; 
 }
+/* #endregion */
 
 /* #region REFLECTION*/
 body{
@@ -393,6 +394,7 @@ body{
 .rest-reflection{
     text-indent: 20px;
 }
+/* #endregion */
 
 /* #region CONTACT PAGE*/
 .contact-title h1{
@@ -469,6 +471,7 @@ body{
         width: 90%
     }
 }
+/* #endregion */
 
 /* #region FOOTER*/
 footer{
@@ -501,7 +504,132 @@ body{
     display: flex;
     flex-direction: column;
 }
+/* #endregion */
 
-
-
-
+/* #region EXPERIENCE PAGE*/
+body.experience-page{
+    background-color:white;
+}
+.experience-main{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+.experience-main h1{
+    font-family: 'Outfit', sans-serif;
+    color:#283F5D;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+/*Experience Card Styling*/
+.experience-card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    border-radius: 15px;
+    color:#283F5D;
+}
+.experience-card.pink{
+    background-color:#FFD1F7;
+}
+.experience-card.green{
+    background-color:#BBDBB8;
+}
+/*Experience Text Styling*/
+.experience-content{
+    min-width: 0;
+}
+.experience-content h2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5em;
+    margin: 0 0 0.25em;
+}
+.experience-content > h3{
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.85em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    }
+.experience-content > p{
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+/*Reflection Box Styling*/
+.experience-reflection{
+    background-color: white;
+    padding: 1em;
+    border-radius: 12px;
+    margin-top: 1em;
+}
+.experience-reflection h3{
+    font-family: 'Outfit', sans-serif;
+    margin: 0 0 0.5em;
+}
+.experience-reflection p{
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0;
+}
+/*Artifact Styling*/
+.experience-artifact{
+    min-width: 0;
+    margin: 0;
+    padding-left: 1.5em;
+    border-left: 3px solid #283F5D;
+    text-align: center;
+}
+.experience-artifact img{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.experience-artifact figcaption{
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.75em;
+    font-style: italic;
+    line-height: 1.4;
+    margin-top: 0.75em;
+}
+/*Tablet and Mobile Responsiveness*/
+@media screen and (max-width: 1024px){
+    .experience-card{
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+    .experience-artifact{
+        padding-left: 0;
+        border-left: none;
+        border-top: 2px solid #283F5D;
+        padding-top: 1em;
+    }
+}
+@media screen and (max-width: 600px){
+    .experience-main{
+        width: 95%;
+        padding: 1em 0;
+    }
+    .experience-main h1{
+        font-size: 2em;
+    }
+    .experience-card{
+        padding: 1em;
+    }
+    .experience-content h2{
+        font-size: 1.3em;
+    }
+    .experience-content > p, .experience-reflection p{
+        font-size: 0.9em;
+    }
+}
+/* #endregion */
