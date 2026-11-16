@@ -1,7 +1,7 @@
 /* Name: Katherine Link
   Date: Novemeber 15th, 2026
   Course: IS_LT 4355
-  Description: 6: Project: Project/Career/Business Content Page
+  Description: 7: Activity: Table
  */
 /* #region INDEX*/
 html{
@@ -522,6 +522,65 @@ body.experience-page{
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 1em;
+}
+/*Experience Summary Table Styling*/
+.experience-summary{
+    background-color: #283F5D;
+    padding: 1.5em;
+    border-radius: 15px;
+    margin-bottom: 2em;
+}
+.table-container{
+    width: 100%;
+    overflow-x: auto;
+}
+.experience-summary table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Lexend', sans-serif;
+    border: 2px solid #283F5D;
+    background-color: white;
+}
+.experience-summary caption{
+    caption-side: top;
+    text-align: left;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.experience-summary th, .experience-summary td{
+    border: 2px solid #283F5D;
+    padding: 0.75em;
+    text-align: left;
+}
+.experience-summary th{
+    background-color: #f6f9ff;
+    color: #283F5D;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+/*Alternate colors of data rows*/
+.experience-summary tbody tr:nth-child(odd){
+    background-color: #ffe4fb;
+}
+.experience-summary tbody tr:nth-child(even){
+    background-color: #f0ffee;
+}
+/*Responsive table for smaller screens*/
+@media screen and (max-width: 600px){
+    .experience-summary{
+        padding: 1em;
+    }
+    .experience-summary table{
+        min-width: 650px;
+        font-size: 0.85em;
+    }
+    .experience-summary caption{
+        font-size: 1.3em;
+    }
 }
 /*Experience Card Styling*/
 .experience-card{
