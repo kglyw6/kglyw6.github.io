@@ -1,5 +1,5 @@
 /* Name: Katherine Link
-  Date: Novemeber 15th, 2026
+  Date: Novemeber 17th, 2026
   Course: IS_LT 4355
   Description: 7: Activity: Table
  */
@@ -570,13 +570,20 @@ body.experience-page{
     background-color: #f0ffee;
 }
 /*Responsive table for smaller screens*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
     .experience-summary{
         padding: 1em;
     }
     .experience-summary table{
-        min-width: 650px;
-        font-size: 0.85em;
+        width: 100%;
+        min-width: 0;
+        table-layout: fixed;
+        font-size: 0.75em;
+    }
+    .experience-summary th, .experience-summary td{
+        padding: 0.4em 0.2em;
+        overflow-wrap: anywhere;
+        white-space: normal;
     }
     .experience-summary caption{
         font-size: 1.3em;
