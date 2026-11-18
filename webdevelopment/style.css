@@ -4,23 +4,29 @@
   Description: 7: Activity: Table
  */
 /* #region INDEX*/
+#hero{
+    background-color: #F7F5F1;
+}
 html{
     scroll-behavior: smooth;
 }
 .hero-main {
     display: flex;
-    min-height: 80vh;
     align-items: center;
-    padding: 3em 5em;
-    gap: 4em;
+    gap: 4rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 3.5rem 6%;
 }
 .hero-intro{
-    width: 50%;
+    flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     text-align: left;
+    gap: 1.5rem;
 }  
 body {
     margin: 0;
@@ -28,91 +34,164 @@ body {
     box-sizing: border-box;
 }
 .hero-image {
-    width: 80%;
-    display: flex;
-    justify-content:right;
-    align-items: flex-end;
+    flex: 1.1;
+    min-width: 0;
 }
 .hero-image img {
-    width: 90%;
-    height: auto;
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    object-position: center 25%;
 }
 .hero-intro h1 {
     color: #283F5D;
-    font-size: 1.8em;
+    font-size: 0.9em;
     font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.15em;
     text-align: left;
+    margin: 0;
 }
 .hero-intro h2 {
     color:#283F5D;
-    font-size: 3.5em;
+    font-size: 4rem;
     font-family: 'Outfit', sans-serif;
+    line-height: 1.05;
     text-align: left;
+    margin: 0;
 } 
 .hero-intro p {
     color: #283F5D;
-    font-size: 1.6em;
+    font-size: 1.1em;
     font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
     text-align: left;
+    margin: 0;
 }
 .purposebutton {
-    display: flex; 
+    display: inline-block; 
     color: #283F5D;
-    font-size: 5em;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
     text-decoration: none;
+    margin-top: 0.5rem;
 }
 .hero-purpose {
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 3em  5em;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    align-items: start;
+    column-gap: 4rem;
+    row-gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2.5rem 6% 4rem;
+    border-top: 1px solid #283F5D;
 }
 .hero-purpose h3 {
     color: #283F5D;
-    font-size: 2em; 
+    font-size: 2.5em; 
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
-    text-align: center;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
 }
 .hero-purpose p {
     color: #283F5D;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Lexend', sans-serif;
-    text-align: center;
+    line-height: 1.8;
+    text-align: left;
+    margin: 0;
 }
 #herobutton {
+    grid-column: 2;
+    justify-self: start;
     display: inline-block;
-    background-color: #FFD1F7;
-    color: #283F5D;
-    font-size: 1.5em;
+    background-color: #283F5D;
+    color: white;
+    font-size: 0.95em;
     font-family: 'Lexend', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 20px;
-    border-radius: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: 3px;
     cursor: pointer;
 }
+.hero-quote{
+    padding: 0 6% 2.5rem;
+    background-color: #F7F5F1;
+    margin: 0;
+}
 .hero-quote blockquote {
-    background-color: #BBDBB8;
-    color: #283F5D;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #283F5D;
+    color: white;
+    padding: 2rem;
+    border-radius: 0;
     text-align: center;
+    margin: 0;
 }
 .quote-text {
-    font-size: 1.4em;
+    color: white;
+    font-size: 1.4rem;
     font-family: 'Lexend', sans-serif;
     text-align: center;
 }
 .hero-quote p {
-    color: #283F5D;
-    font-size: 0.875em;
+    color: white;
+    font-size: 0.875rem;
     font-family: 'Lexend', sans-serif;
+    letter-spacing: 0.12em;
     text-align: center;
+}
+/*Index Tablet Layout*/
+@media (max-width: 1024px){
+    .hero-main{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem 6%;
+    }
+    .hero-intro, .hero-image{
+        width: 100%;
+        flex: auto;
+    }
+    .hero-image img{
+        height: auto;
+        max-height: 400px;
+    }
+    .hero-purpose{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .hero-purpose p, #herobutton{
+        grid-column: 1;
+    }
+}
+/*Index Phone Layout*/    
+@media (max-width: 600px){
+    .hero-main{
+        padding: 2rem 5%;
+    }
+    .hero-intro h2{
+        font-size: 2.5rem;
+    }
+    .hero-intro p{
+        font-size: 1rem;
+    }
+    .hero-purpose{
+        padding: 2.5rem 5%;
+    }
+    .hero-purpose h3{
+        font-size: 2rem;
+    }
+    .hero-quote{
+        padding: 0 5% 2rem;
+    }
+    .quote-text {
+        font-size: 1.15rem;
+    }
 }
 /* #endregion */
 
