@@ -196,32 +196,39 @@ body {
 /* #endregion */
 
 /* #region ABOUT*/
+.about-top, .education-overview, .beyond-resume-video{
+    background-color:#F7F5F1;
+}
+body:has(.about-top){
+    background-color:#F7F5F1;
+}
 .about-top{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
         "photo title"
         "photo text";
-    gap: 1em 3em;
+    gap: 1rem 3rem;
     align-items: center;
-    padding: 3em 5em;
+    max-width: 1400px;
+    padding: 4rem 6%;
 }
 .headshot img {
     width: 300px;
     height: 350px;
+    max-width: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    border: 10px solid #FFD1F7;
-    background-color:#FFD1F7;
+    border-radius: 0;
+    border: 6px solid #283F5D;
 }
 .about-top h1 {
     grid-area: title;
     color: #283F5D;
-    font-size: 2em; 
+    font-size: 2.5rem; 
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
     text-align: left;
-    width: 100%;
+    margin: 0;
 }
 .about-top .headshot {
     grid-area: photo;
@@ -229,86 +236,139 @@ body {
 .about-top p {
     grid-area: text;
     color: #283F5D;
-    font-size: 1.25em;
+    font-size: 1rem;
     font-family: 'Lexend', sans-serif;
+    line-height: 1.8;
     text-align: left;
+    margin: 0;
 }
 .education-overview {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    padding: 3em 5em;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    align-items: start;
+    column-gap: 4rem;
+    row-gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 6%;
+    border-top: 1px solid #283F5D;
 }
 .education-overview h1 {
     color: #283F5D;
-    font-size: 2em; 
+    font-size: 2.5rem; 
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
     text-align: left;
+    margin: 0;
 }
 .education-overview ul{
     color: #283F5D;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: 'Lexend', sans-serif;
     text-align: left;
     list-style-type: square;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 25px;
+    margin: 0;
+    padding-left: 1.5rem;
 }
 .education-overview ul ul{
     list-style-type: circle;
-    margin-top: 5px
+    margin-top: 5px;
+}
+.education-overview > ul > li{
+    padding: 0 0 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #d7d0c7;
+}
+.education-overview > ul > li:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
 }
 .education-overview li:hover{
-    font-weight: bold
+    font-weight: bold;
 }
 .resume-link {
     display: block;
     width: fit-content;
-    background-color: #FFD1F7;
-    color: #283F5D;
-    font-size: 1.5em;
+    background-color: #283F5D;
+    color: white;
+    font-size: 1rem;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
     text-align: center;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     cursor: pointer;
     border: 2px solid #283F5D;
     text-decoration: none;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
 }
-.resume-video{
-    padding: 3em 5em;
-    text-align: center;
+/*Beyond the Resume Section*/
+.beyond-resume{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    align-items: center;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 3%;
+    border-top: 1px solid #283F5D;
+    box-sizing: border-box;
 }
-.resume-video video{
-    width: 500px;
+.beyond-resume text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+.beyond-resume-text .section-label{
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: #283F5D;
+    margin: 0;
+}
+.beyond-resume-text h2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    color: #283F5D;
+    line-height: 1.1;
+    margin: 0;
+    margin-bottom: 0.75rem;
+}
+.beyond-resume-text p{
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #283F5D;
+    margin: 0 0 1rem 0;
+}
+.beyond-resume .resume-link{
+    margin: 0;
+    font-size: 0.95rem;
+}
+.beyond-resume-video{
+    min-width: 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.beyond-resume-video video{
+    display: block;
+    width: 100%;
     max-width: 100%;
     height: auto;
-    border: 5px solid #FFD1F7;
-    border-radius: 5px;
-    background-color: #283F5D;
+    border: 1px solid #283F5D;
+    border-radius: 0;
+    box-sizing: border-box;
 }
+/*ABOUT Tablet Styling*/
 @media screen and (max-width: 1024px){
-    .hero-main{
-        flex-direction: column;
-        padding: 2em;
-    }
-    .hero-intro{
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
-    .hero-image{
-        width: 100%;
-        justify-content: center;
-    }
     .about-top{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -337,20 +397,33 @@ body {
         order: 3;
     }
     .education-overview{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
         padding: 2em;
     }
-    .resume-video video{
+    .beyond-resume{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 6%;
+    }
+    .beyond-resume-video{
         width: 100%;
-        max-width: 500px;
-        height: auto;
-        box-sizing: border-box;
-    }
-    .resume-video{
-        padding: 2em;
+        max-width: 550px;
+        margin: 0 auto;
     }
 }
+/*ABOUT Phone Styling*/
+@media (max-width: 600px){
+    .beyond-resume{
+        padding: 2.5rem 5%;
+    }
+    .beyond-resume-text h2{
+        font-size: 2rem;
+    }
+}
+/*ABOUT Print*/
 @media print{
-    header,.headshot,.resume,.resume-video{
+    header,.headshot,.resume,.beyond-resume-video{
         display: none !important;
     }
     body {
