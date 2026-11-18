@@ -4,6 +4,9 @@
   Description: 7: Activity: Table
  */
 /* #region INDEX*/
+body:has(.hero-main){
+    background-color:#F7F5F1;
+}
 #hero{
     background-color: #F7F5F1;
 }
@@ -658,9 +661,9 @@ body{
 }
 /* #endregion */
 
-/* #region EXPERIENCE PAGE*/
+/* #region PROJECTS PAGE*/
 body.experience-page{
-    background-color:white;
+    background-color: #F7F5F1;
 }
 .experience-main{
     width: 90%;
@@ -716,10 +719,10 @@ body.experience-page{
 }
 /*Alternate colors of data rows*/
 .experience-summary tbody tr:nth-child(odd){
-    background-color: #ffe4fb;
+    background-color: #a6bcd6;
 }
 .experience-summary tbody tr:nth-child(even){
-    background-color: #f0ffee;
+    background-color: #d6e1ef;
 }
 /*Responsive table for smaller screens*/
 @media screen and (max-width: 768px){
@@ -752,11 +755,11 @@ body.experience-page{
     border-radius: 15px;
     color:#283F5D;
 }
-.experience-card.pink{
-    background-color:#FFD1F7;
+.experience-card.dark{
+    background-color:#a6bcd6;
 }
-.experience-card.green{
-    background-color:#BBDBB8;
+.experience-card.light{
+    background-color:#d6e1ef;
 }
 /*Experience Text Styling*/
 .experience-content{
