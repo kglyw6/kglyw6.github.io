@@ -1,7 +1,7 @@
 /* Name: Katherine Link
-  Date: Novemeber 20th, 2026
+  Date: Novemeber 21st, 2026
   Course: IS_LT 4355
-  Description: 7: Activity: Animation
+  Description: 7: Activity: Custom Fonts
  */
 /* #region INDEX*/
 body:has(.hero-main){
@@ -224,14 +224,19 @@ body:has(.about-top){
     border-radius: 0;
     border: 6px solid #283F5D;
 }
+/* 'DM Serif Display' Custom font from Google Fonts Apllied to About Page Heading*/
+/*Custom styles for all <h1> elements on About Page*/
+/*Custom Heading Style: letter spacing*/
 .about-top h1 {
     grid-area: title;
     color: #283F5D;
     font-size: 2.5rem; 
-    font-family: 'Outfit', sans-serif;
+    font-family: 'DM Serif Display', serif;
+    font-style: normal;
     font-weight: bold;
     text-align: left;
     margin: 0;
+    letter-spacing: 0.08em;
 }
 .about-top .headshot {
     grid-area: photo;
@@ -256,13 +261,18 @@ body:has(.about-top){
     padding: 3rem 6%;
     border-top: 1px solid #283F5D;
 }
+/* 'DM Serif Display' Custom font from Google Fonts Apllied to About Page Heading*/
+/*Custom styles for all <h1> elements on About Page*/
+/*Custom Heading Style: text shadow*/
 .education-overview h1 {
     color: #283F5D;
     font-size: 2.5rem; 
-    font-family: 'Outfit', sans-serif;
+    font-family: 'DM Serif Display', serif;
+    font-style: normal;
     font-weight: bold;
     text-align: left;
     margin: 0;
+    text-shadow: 3px 3px 3px rgba(40, 63, 93, 0.5);
 }
 .education-overview ul{
     color: #283F5D;
